@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "copcheck8",
+    "slug": "copcheck8",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": ["INTERNET"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "http": {
+      "proxy": "http://mon-proxy:mon-port"
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "hostType": "tunnel",
+      "lanType": "ip",
+      "dev": true,
+      "minify": true,
+      "urlRandomness": "exp123456"
+    }
+  }
+}
